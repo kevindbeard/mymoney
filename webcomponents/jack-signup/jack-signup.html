@@ -1,0 +1,89 @@
+<link rel="import" href="../../bower_components/core-icon-button/core-icon-button.html">
+<link rel="import" href="../../bower_components/core-toolbar/core-toolbar.html">
+<link rel="import" href="../../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../bower_components/paper-checkbox/paper-checkbox.html">
+<link rel="import" href="../../bower_components/font-roboto/roboto.html">
+
+<polymer-element name="jack-signup">
+
+  <template>
+    <style>    
+      :host {
+        position: relative;
+        box-sizing: border-box;
+      }
+      #core_card {
+        position: absolute;
+        border-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
+        background-color: rgb(255, 255, 255);
+        font-family: 'Roboto', sans-serif;
+        width: 400px;
+      }
+      #name {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      #email {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      #password {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      #paper_button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(79, 125, 201);
+      }
+      #core_toolbar {
+        right: 0px;
+        color: rgb(255, 255, 255);
+        fill: rgb(255, 255, 255);
+        background-color: rgb(79, 125, 201);
+      }
+      #paper_checkbox {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: smaller;
+      }
+      .link {
+        margin: 10px;
+        font-size: smaller;
+      }
+      #banner_text {
+        width: 130px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+    <core-card id="core_card" layout  vertical>
+      <core-toolbar id="core_toolbar">
+        <div id="banner_text" flex>JOIN FOR FREE!</div>
+      </core-toolbar>
+<!-- TODO: Need to use a form here and use paper-input-decorator with normal inputs -->
+      <paper-input label="name" id="name" floatingLabel="true"></paper-input>
+      <paper-input label="email" id="email"floatingLabel="true"></paper-input>
+      <paper-input label="password" id="password"floatingLabel="true"></paper-input>
+      <paper-button id="paper_button">Sign up!</paper-button>
+      <paper-checkbox label="I agree to the terms and conditions" id="paper_checkbox"></paper-checkbox>
+    </core-card>
+  </template>
+
+  <script>
+
+    Polymer({
+      
+    });
+
+  </script>
+
+</polymer-element>

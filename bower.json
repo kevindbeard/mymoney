@@ -1,0 +1,19 @@
+{
+  "name": "mymoney",
+  "version": "0.0.0",
+  "authors": [
+    "Kevin Beard <kevin@camperfans.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.5"
+  }
+}
