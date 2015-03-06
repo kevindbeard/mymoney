@@ -5,7 +5,7 @@
 <link rel="import" href="../../bower_components/paper-checkbox/paper-checkbox.html">
 <link rel="import" href="../../bower_components/font-roboto/roboto.html">
 
-<polymer-element name="jack-signup">
+<polymer-element name="jack-login">
 
   <template>
     <style>    
@@ -41,13 +41,13 @@
         margin-left: 30px;
         margin-right: 30px;
         color: rgb(255, 255, 255);
-        background-color: #2196F3;
+        background-color: #D32F2F;
       }
       #core_toolbar {
         right: 0px;
         color: rgb(255, 255, 255);
         fill: rgb(255, 255, 255);
-        background-color: #2196F3;
+        background-color: #D32F2F;
       }
       #paper_checkbox {
         margin-top: 10px;
@@ -61,7 +61,7 @@
         font-size: smaller;
       }
       #banner_text {
-        width: 130px;
+        width: 137px;
         margin: 0 auto;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -69,13 +69,13 @@
     </style>
     <core-card id="core_card" layout  vertical hidden?={{hiddenFlag}}>
       <core-toolbar id="core_toolbar">
-        <div id="banner_text" flex>JOIN FOR FREE!</div>
+        <div id="banner_text" flex>WELCOME BACK!</div>
       </core-toolbar>
 <!-- TODO: Need to use a form here and use paper-input-decorator with normal inputs -->
       <paper-input label="name" id="name" floatingLabel="true"></paper-input>
       <paper-input label="email" id="email"floatingLabel="true"></paper-input>
       <paper-input label="password" id="password"floatingLabel="true"></paper-input>
-      <paper-button id="paper_button">Sign up</paper-button>
+      <paper-button id="paper_button">Log in</paper-button>
       <paper-checkbox label="I agree to the terms and conditions" id="paper_checkbox"></paper-checkbox>
     </core-card>
   </template>

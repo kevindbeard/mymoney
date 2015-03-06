@@ -22,14 +22,11 @@ html {
 }
 
 #login_button {
-  background-color: #D32F2F;  
+  background-color: #D50000;  
 }
 
-#signup_button {
-  background-color: #2196F3;  
-}
-
-#signup_box, #login_box {
+#signup_box {
+  top: 90px;
   width: 400px;
 }
 
@@ -37,4 +34,11 @@ html {
   margin-left: 5px;
 }
 
+slide-switcher {
+  height: 300px;
+  width: 600px;
+}
 
+slide-clip {
+  font-size: xx-large;
+}
